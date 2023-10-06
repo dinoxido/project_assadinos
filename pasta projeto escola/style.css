@@ -5,10 +5,12 @@
 body{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 14px;
+    margin-left: 3em;
     margin:0%;
     border: 0cm;
     position: relative;
     min-height: 100vh;
+
 }
 .contimg{
     height: 15em;
@@ -41,13 +43,20 @@ header{
 }
 
 header h1{
-	font-size: 2em;
+	font-size: 3em;
 	display:inline;
 	vertical-align:	middle;
     color: beige;
+    font-family: monospace;
     
 }
-	
+.centro{
+    background-color:rgb(173, 173, 173);
+    width: 80%;
+    margin-left: 10%;
+    padding: 9em;
+    overflow: hidden;
+}
 
 main {
     
@@ -56,17 +65,19 @@ main {
     overflow: auto; 
     align-items: center; 
     display: flex;
-    width: 75%;
     border-style: double;
      border-width: 15px; 
      border-radius: 20px;
      border-color: #3f0d12e8;
      margin: 0 auto;
-     margin-top: 1em;
      font-family:monospace;
  }
  main p {
     margin-left: 20px;
+    font-size: 20px;
+ }
+ h2{
+    font-size: 40px;
  }
  footer {
     height: 5em;

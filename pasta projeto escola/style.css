@@ -60,7 +60,7 @@ header h1{
 
 main {
     
-    background-color: #77a68275;
+    background-color: #77a682;
     padding: 30px;
     overflow: auto; 
     align-items: center; 
@@ -78,6 +78,23 @@ main {
  }
  h2{
     font-size: 40px;
+ }
+ .botoesdir{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    margin-top: 2em;
+
+ }
+ .churras{
+    border-radius: 20px;
+    background-color: #77a68275 ;
+    padding: 20px;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0),#77a682)
  }
  footer {
     height: 5em;

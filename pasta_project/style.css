@@ -57,11 +57,19 @@ ul{
     grid-auto-rows: 200px;
     margin-bottom: 20px;
 }
+.centro li img{
+    grid-row: 1 / 3
+}
 .centro li{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr;
     width:auto;
     box-shadow:  11px 11px 20px #7a7772,
     -11px -11px 20px #ffffff;
     margin-top: 2em;
+    padding: 10px;
+    
 }
 .centro{
     background-color:#d3cec5 ;

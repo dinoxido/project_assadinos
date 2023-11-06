@@ -10,7 +10,7 @@ body {
     border: 0cm;
     position: relative;
     min-height: 80vh;
-    background-color: #466b4b;
+    background-image: url(Sprinkle.svg);
 
 }
 
@@ -37,25 +37,11 @@ body {
     justify-content: center;
     padding-bottom: 1em;
 }
-.one ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap:10px;
-    position: absolute;
-    right: 10px;
-    top:10px;
-}
-.one button{
-    border-color: #00000000;
-    background-color: #bebebe80;
-    
-}
 
 header {
     text-align: center;
 
 }
-
 header h1 {
     font-size: 60px;
     display: inline;
@@ -63,7 +49,6 @@ header h1 {
     color: beige;
 
 }
-
 header ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -71,30 +56,65 @@ header ul {
     margin-top: 10px;
     color: beige;
 }
-
+header li {
+    width: 100px
+}
 .centro ul {
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 200px;
     margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
 }
-
+.centro li img{
+    grid-row: 1 / 3
+}
+.descrit{
+    grid-column: 2 / 4;
+}
 .centro li {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 2fr;
     width: auto;
-    box-shadow: 11px 11px 20px #7a7772,
-        -11px -11px 20px #ffffff;
+    height: auto;
+    box-shadow:  14px 14px 30px #a09c9565,
+             -14px -14px 30px #ddd8cf65;
     margin-top: 2em;
+    padding: 10px;
+    background-color: #d3cec5;
 }
 
 .centro {
-    background-color: #d3cec5;
+    background-color: #d3cec565;
     width: 80%;
     margin-left: 10%;
     padding: 5em;
     padding-top: 4em;
     overflow: hidden;
 }
+.centro .carne ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+ 
+    
 
+
+}
+.centro .carne li{
+    display: grid;
+    height: 250px;
+    grid-template-columns: 1fr;
+
+    grid-template-rows: 3fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.centro .carne h2{
+    margin-top: 20px; 
+}
 main {
     background-color: #ffe0a7;
     padding: 30px;
@@ -123,7 +143,7 @@ h2 {
 a {
     text-decoration: none;
     color: inherit;
-    
+    size: 100%;
 }
 
 .botoesdir {
@@ -142,8 +162,7 @@ a {
     height: 600px;
     text-align: center;
     background: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(49, 49, 49));
-    box-shadow: 11px 11px 20px #7a7772,
-        -11px -11px 20px #ffffff;
+
 }
 
 .churrasc {
@@ -152,35 +171,56 @@ a {
     background: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(49, 49, 49));
     text-align: center;
     border-radius: 20px;
-    box-shadow: 11px 11px 20px #7a7772,
-        -11px -11px 20px #ffffff;
 }
 button {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 11px;
-    background-color: #ffffff00;
     cursor: pointer;
     min-height: 3.75em;
     border-radius: 10px;
     min-width: 0;
-    padding: 1em 2.3em;
     text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
     touch-action: manipulation;
     will-change: transform;
 }
-
-button:hover {
+ button:hover {
     color: #fff;
     background-color: #1A1A1A;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-10px);
 }
 
-button:active {
+ button:active {
     box-shadow: none;
     transform: translateY(0);
+}
+.centro button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11px;
+    background-color: #ffffff00;
+}
+.headiv button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11px;
+    background-color: #00000000;
+}
+.one li{
+    width: 100px
+}
+.one ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:10px;
+    position: absolute;
+    right: 10px;
+    top:10px;
+    align-items: center;
+    justify-content: center;
+}
+.one button{
+    border-color: #00000000;
+    background-color: #bebebe83;
+    
 }
 
 .bg-img2 {

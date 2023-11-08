@@ -106,7 +106,7 @@ header li {
     display: grid;
     height: 250px;
     grid-template-columns: 1fr;
-
+    gap: 10px;
     grid-template-rows: 3fr 1fr;
     align-items: center;
     justify-content: center;
@@ -114,6 +114,12 @@ header li {
 }
 .centro .carne h2{
     margin-top: 20px; 
+}
+.carne .bovinos img{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 main {
     background-color: #ffe0a7;
@@ -172,6 +178,7 @@ a {
     text-align: center;
     border-radius: 20px;
 }
+
 button {
     cursor: pointer;
     min-height: 3.75em;

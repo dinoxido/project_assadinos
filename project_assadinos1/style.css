@@ -51,7 +51,7 @@ header h1 {
 }
 header ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     gap: 10px;
     margin-top: 10px;
     color: beige;
@@ -111,9 +111,10 @@ header li {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 0px;
 }
 .centro .carne h2{
-    margin-top: 20px; 
+    margin: 20px 0px 20px 0px
 }
 .carne .bovinos img{
     width: 100%;
@@ -200,6 +201,9 @@ button {
  button:active {
     box-shadow: none;
     transform: translateY(0);
+}
+.centro .carne button{
+    border: #00000000 
 }
 .centro button{
     font-family: Georgia, 'Times New Roman', Times, serif;

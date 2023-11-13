@@ -1,10 +1,8 @@
-const raw= document.getElementById("raw").innerHTML;
+
 
 
 
 function abba( ){
-    const son ={
-        img = document.querySelectorAll("img")
-        text = document.querySelectorAll("p")
-    }
+        var img = document.getElementById("carneimg")
+        var text = document.getElementById("carnetitu")
 }

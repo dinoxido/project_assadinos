@@ -1,18 +1,25 @@
+
+
 function salvarDados() {
-       /* var img = document.querySelectorAll(".img").innerHTML*/
-       var buttonElement = document.querySelector('img.img');
-       var img = buttonElement.getAttribute('data-src');
-    localStorage.setItem("img", img.src);
-    window.location.href = "carne.html"
+       var img = document.querySelectorAll(".img");
+       var imgsrc = img.alt;
+    localStorage.setItem("imgsrc", imgsrc);
+    window.location.href = "carne.html";
 }
+var img = document.querySelectorAll(".img");
+var imgsrc = img.alt;
+localStorage.setItem("imgsrc", imgsrc);
+
 function carregarDados() {
-        var img = localStorage.getItem("img");
+        var img = localStorage.getItem("imgsrc");
         if (img) {
             document.getElementById("carnetitu").innerHTML ='<img src="' + img + '">';
         }
+        console.log(img)
     }
     carregarDados(); 
-
+   
+/*
 //------------------------------------------------------------------
 function redirecionamento(){
         var eleimg = document.querySelector("img.img");
@@ -38,3 +45,4 @@ function carregarDados() {
         }
     }
     carregarDados();
+    */

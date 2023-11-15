@@ -10,7 +10,7 @@ body {
     border: 0cm;
     position: relative;
     min-height: 80vh;
-    background-image: url(Sprinkle.svg);
+    background-image: url(../imagens/Sprinkle.svg);
     overflow: hidden;
 }
 
